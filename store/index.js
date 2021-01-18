@@ -1,12 +1,18 @@
-export const state = () => ({
+export const state = () =>
+({
   activeIssue: ''
 })
 
-export const mutations = {
-  expandIssue(state, id) {
-    if (state.activeIssue === id.toString()) {
+export const mutations = 
+{
+  expandIssue(state, id) 
+  {
+    if (state.activeIssue === id.toString()) 
+    {
       state.activeIssue = ''
-    } else {
+    } 
+    else 
+    {
       state.activeIssue = id.toString()
     }
   }
